@@ -1,20 +1,21 @@
 {
-	"folders":
-	[
-		{
-			"path": "./",
-            "file_exclude_patterns":
-            [
-                ".gitignore"
-            ],
-            "folder_exclude_patterns":
-            [
-                "*.pyc"
-            ]
-		}
-	],
+  "folders":
+  [
+    {
+      "path": "./",
+      "file_exclude_patterns":
+      [
+        ".gitignore"
+      ],
+      "folder_exclude_patterns":
+      [
+        "*.pyc"
+      ]
+    }
+  ],
   "settings":
   {
-      "tab_size": 4
+    "tab_size": 4,
+    "rulers": [80]
   }
 }
