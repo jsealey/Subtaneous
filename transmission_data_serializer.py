@@ -5,8 +5,8 @@ from transmission_data import TransmissionData
 
 class TransmissionDataSerializer(JSONEncoder):
     def default(self, obj):
-        pass
+        return {'data': obj.data, 'time': obj.time}
 
     @staticmethod
-    def Encode(data):
-        pass
+    def Decode(data):
+        return TransmissionData(data['data'], data['time'])
