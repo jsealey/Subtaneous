@@ -5,11 +5,12 @@
       "path": "./",
       "file_exclude_patterns":
       [
-        "*.sublime-workspace"
+        "*.sublime-workspace",
+        "*.pyc"
       ],
       "folder_exclude_patterns":
       [
-        "*.pyc"
+        "__pycache__"
       ]
     }
   ],
