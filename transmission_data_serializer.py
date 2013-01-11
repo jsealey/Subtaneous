@@ -5,8 +5,10 @@ from transmission_data import TransmissionData
 
 class TransmissionDataSerializer(JSONEncoder):
     def default(self, obj):
-        return {'data': obj.data, 'time': obj.time}
+        return {'data': obj.Data, 'time': obj.Time}
 
     @staticmethod
-    def Decode(data):
-        return TransmissionData(data['data'], data['time'])
+    def Decode(dct):
+        if 'data' in dct:
+            return TransmissionData(dct['data'], dct['time'])
+        return dct
