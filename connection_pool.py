@@ -1,5 +1,5 @@
 from connection import Connection
 
 
-class ConnectionPool(object):
+class ConnectionPool:
     pass

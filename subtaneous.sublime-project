@@ -10,7 +10,11 @@
       ],
       "folder_exclude_patterns":
       [
-        "__pycache__"
+        "__pycache__",
+        "_build",
+        "_static",
+        "_templates",
+        "build"
       ]
     }
   ],
