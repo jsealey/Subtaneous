@@ -5,6 +5,10 @@ Discovers all the tests that are in the project
 by searching the unit_tests package for any tests.
 
 Test modules MUST follow the pattern *_tests.py
+
+
+authors
+    Barrett Hostetter-Lewis
 '''
 
 import unittest
