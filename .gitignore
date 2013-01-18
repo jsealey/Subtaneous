@@ -2,3 +2,4 @@
 *.pyo
 *.sublime-workspace
 test.py
+_build/*

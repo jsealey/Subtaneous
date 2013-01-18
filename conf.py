@@ -17,7 +17,7 @@ import sys, os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Subtaneous'
-copyright = '2013, Barrett Pardeep Andreas Jon'
+copyright = '2013, Simucom'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -79,7 +79,7 @@ exclude_patterns = ['_build']
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
-#show_authors = False
+show_authors = True
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -185,7 +185,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'Subtaneous.tex', 'Subtaneous Documentation',
-   'Barrett Pardeep Andreas Jon', 'manual'),
+   'Simucom', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -215,7 +215,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'subtaneous', 'Subtaneous Documentation',
-     ['Barrett Pardeep Andreas Jon'], 1)
+     ['Simucom'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -229,7 +229,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'Subtaneous', 'Subtaneous Documentation',
-   'Barrett Pardeep Andreas Jon', 'Subtaneous', 'One line description of project.',
+   'Simucom', 'Subtaneous', 'One line description of project.',
    'Miscellaneous'),
 ]
 

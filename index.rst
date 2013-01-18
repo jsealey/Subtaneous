@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+.. automodule:: tester
 
 
 Indices and tables
