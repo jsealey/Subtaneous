@@ -7,8 +7,7 @@ by searching the unit_tests package for any tests.
 Test modules MUST follow the pattern *_tests.py
 
 
-authors
-    Barrett Hostetter-Lewis
+.. moduleauthor:: Barrett Hostetter-Lewis<musikal.fusion@gmail.com>
 '''
 
 import unittest
