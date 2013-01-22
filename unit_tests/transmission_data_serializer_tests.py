@@ -1,19 +1,25 @@
+'''
+Module for testing the TransmissionDataSerializer
+'''
 from unittest import TestCase
 
 
-class _TransmissionDataSerializerTests(TestCase):
+class TransmissionDataSerializerTests(TestCase):
     '''
-    TODO Document here
+    Class used to make unittest work. Tests TransmissionDataSerializer
     '''
     def setUp(self):
         '''
-        TODO Document here
+        Used for defualt setup of all tests
         '''
         self.ExpectedData = {'first': 1, 'second': 2}
 
     def test_SerializeWithTime(self):
         '''
-        TODO Document here
+        Tests serialization when the time is manually inserted.
+
+        Uses json module directly and tests the serialization utility class that
+        is used by the higher level abstractions in the module.
         '''
         from time import time
         from json import dumps
@@ -31,7 +37,10 @@ class _TransmissionDataSerializerTests(TestCase):
 
     def test_SerializeWithOutTime(self):
         '''
-        TODO Document here
+        Tests serialization when the time is automatically assigned.
+
+        Uses json module directly and tests the serialization utility class that
+        is used by the higher level abstractions in the module.
         '''
         from json import dumps
         from transmission_data import TransmissionData
@@ -47,7 +56,10 @@ class _TransmissionDataSerializerTests(TestCase):
 
     def test_Deserialize(self):
         '''
-        TODO Document here
+        Tests deserialization.
+
+        Uses json module directly and tests the serialization utility class that
+        is used by the higher level abstractions in the module.
         '''
         from time import time
         from json import loads
@@ -74,7 +86,7 @@ class _TransmissionDataSerializerTests(TestCase):
 
     def test_dumps(self):
         '''
-        Tests that the dumps abstraction for JSON works
+        Tests that the dumps abstraction for JSON works.
         '''
         from transmission_data import TransmissionData
         from transmission_data_serializer import dumps
@@ -86,7 +98,11 @@ class _TransmissionDataSerializerTests(TestCase):
     @staticmethod
     def GenerateString(ExpectedTime):
         '''
-        TODO Document here
+        Utility function to create a JSON string with a given time.
+
+        This is used for testing by building a json string that can be compared
+        against to determine if serialization was successful. The param
+        sets the value at the 'time' key.
         '''
         string = '{"data": {"first": 1, "second": 2}, "time": %s}'
         # we cast to a string instead of just using a float interpolation
