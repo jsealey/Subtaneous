@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Runs all tests for Subtaneous.
 
@@ -12,6 +13,7 @@ Test modules MUST follow the pattern \*_tests.py
 
 import unittest
 from os import getcwd, path
+from sys import exit
 
 if __name__ == '__main__':
     loader = unittest.TestLoader()
@@ -21,5 +23,5 @@ if __name__ == '__main__':
                                 top_level_dir=getcwd(),
                               )
     runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(testSuite)
-
+    result = runner.run(testSuite)
+    exit(0 if result.wasSuccessful() else 1)

@@ -1,0 +1,6 @@
+language: python
+python:
+    - "3.3"
+
+#this should run the unit tests
+script: python tester.py
