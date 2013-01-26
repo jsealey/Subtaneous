@@ -18,5 +18,15 @@ class TransmissionData:
         Timestamp is set by the time param. If not set then it will default to
         time.time().
         '''
-        self.Data = data
-        self.Time = CurrentTime() if time is None else time
+        self._Data = data
+        self._Time = CurrentTime() if time is None else time
+
+    @property
+    def Data(self):
+        '''The data being transmitted'''
+        return self._Data
+
+    @property
+    def Time(self):
+        '''The time the data was issued'''
+        return self._Time
