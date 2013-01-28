@@ -1,6 +1,7 @@
 language: python
 python:
     - "3.3"
-
+install: "pip install pylint"
+before_scripts: pylint
 #this should run the unit tests
 script: python tester.py
