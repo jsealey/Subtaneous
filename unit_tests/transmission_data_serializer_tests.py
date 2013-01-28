@@ -68,7 +68,10 @@ class TransmissionDataSerializerTests(TestCase):
         curTime = time()
         expected = TransmissionData(self.ExpectedData, curTime)
         jsonString = self.GenerateString(curTime)
-        actual = loads(jsonString, object_hook=_TransmissionDataSerializer.Decode)
+        actual = loads(
+                        jsonString,
+                        object_hook=_TransmissionDataSerializer.Decode
+                      )
         self.assertEqual(actual.Time, expected.Time)
         self.assertEqual(actual.Data, expected.Data)
 
