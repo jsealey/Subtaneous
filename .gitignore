@@ -3,3 +3,4 @@
 *.sublime-workspace
 test.py
 build/*
+.cache
