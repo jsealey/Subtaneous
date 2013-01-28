@@ -66,7 +66,7 @@ class _TransmissionDataSerializer(JSONEncoder):
     @staticmethod
     def Decode(dct):
         '''
-        Customizes deserialization of a JSON encoded TransmissionData object.__class__
+        Customizes deserialization of a JSON encoded TransmissionData object.
 
         To decode the json module requires a function that will be called on all
         dictionaries (I think, or all structures).

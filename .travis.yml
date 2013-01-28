@@ -1,6 +1,9 @@
 language: python
 python:
     - "3.3"
-
+#install the linter
+install: "pip install pytest pytest-pep8"
 #this should run the unit tests
 script: python tester.py
+#run the linter
+after_success: py.test --pep8 -k pep8

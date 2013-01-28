@@ -21,7 +21,7 @@ if __name__ == '__main__':
                                 path.join(getcwd(), 'unit_tests'),
                                 pattern='*_tests.py',
                                 top_level_dir=getcwd(),
-                              )
+                               )
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(testSuite)
     exit(0 if result.wasSuccessful() else 1)
